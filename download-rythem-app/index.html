@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Old Page</title>
-     <meta charset="UTF-8" />
-     <meta http-equiv="refresh" content="3; URL=https://www.hubspot.com/" />
-   </head>
-   <body>
-     <p>This page has been moved. If you are not redirected within 3 seconds, click <a href="https://www.hubspot.com/">here</a> to go to the HubSpot homepage.</p>
-   </body>
+<head>
+  <style>
+    body {
+      background-color: #f3f3f3;
+    }
+
+    .loader {
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #FFA500; /* Orange color */
+      width: 120px;
+      height: 120px;
+      animation: spin 2s linear infinite;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader"></div>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="3; URL=https://www.hubspot.com/" />
+</body>
 </html>
